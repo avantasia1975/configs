@@ -1,0 +1,107 @@
+/**
+ * ROFI Color theme
+ * User: Qball
+ * Copyright: Dave Davenport
+ */
+
+* {
+    foreground:  #ffeedd;
+    backlight:   #ccffeedd;
+    background-color:  transparent;
+    dark: #1c1c1c;
+    // Black
+    black:       #3d352a;
+    lightblack:  #554444;
+    tlightblack:  #554444cc;
+    //
+    // Red
+    red:         #cd5c5c;
+    lightred:    #cc5533;
+    //
+    // Green
+    green:       #86af80;
+    lightgreen:  #88cc22;
+    //
+    // Yellow
+    yellow:      #e8ae5b;
+    lightyellow:     #ffa75d;
+    //
+    // Blue
+    blue:      #6495ed;
+    lightblue:     #87ceeb;
+    //
+    // Magenta
+    magenta:      #deb887;
+    lightmagenta:     #996600;
+    //
+    // Cyan
+    cyan:      #b0c4de;
+    tcyan:      #ccb0c4de;
+    lightcyan:     #b0c4de;
+    //
+    // White
+    white:      #bbaa99;
+    lightwhite:     #ddccbb;
+    //
+    // Bold, Italic, Underline
+    highlight:     underline bold #ffffff;
+
+    transparent: rgba(0,0,0,0);
+    font: "Source Code Pro 10";
+}
+window {
+    location: center;
+    anchor:   center;
+    transparency: "screenshot";
+    padding: 10px;
+    border:  0px;
+    border-radius: 10px;
+    color: @magenta;
+    jbackground-color: @transparent;
+    spacing: 0;
+    children:  [mainbox];
+    orientation: horizontal;
+}
+mainbox {
+    spacing: 0;
+}
+inputbar {
+    enabled: false;
+}
+listview {
+    padding: 8px;
+    border-radius: 0px 0px 15px 15px;
+    border-color: @foreground;
+    //border: 0px 2px 2px 2px;
+    background-color: transparent;
+    dynamic: false;
+    //layout: horizontal;
+    lines: 4;
+}
+element {
+    //padding: 3px;
+    margin: 10px;
+    vertical-align: 0.5;
+    border: 2px;
+    border-radius: 4px;
+    background-color: #1c1c1c00;
+    color: @foreground;
+    font:inherit;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+    align: center;
+}
+element selected.normal {
+    background-color: @blue;
+}
+element normal active {
+    foreground: @lightblue;
+}
+element normal urgent {
+    foreground: @lightred;
+}
+element alternate normal {
+}
+
