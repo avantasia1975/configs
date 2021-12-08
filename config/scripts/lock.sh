@@ -1,5 +1,5 @@
 #!/bin/bash
-icon="$HOME/.icons/tux.png"
+icon="$HOME/.config/i3/tux.png"
 # create a temp file
 img=$(mktemp /tmp/XXXXXXXXXX.png)
 # Take a screenshot of current desktop

@@ -50,6 +50,7 @@
     font: "Source Code Pro 10";
 }
 window {
+    width: 189px;
     location: center;
     anchor:   center;
     transparency: "screenshot";
@@ -57,31 +58,31 @@ window {
     border:  0px;
     border-radius: 10px;
     color: @magenta;
-    jbackground-color: @transparent;
+    background-color: @transparent;
     spacing: 0;
     children:  [mainbox];
     orientation: horizontal;
+    font: "System San Francisco Display 15";
 }
 mainbox {
     spacing: 0;
+    children: [ listview ];
 }
-inputbar {
-    enabled: false;
-}
+    
 listview {
+    width: 180px;
     padding: 8px;
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
     border-color: @foreground;
     //border: 0px 2px 2px 2px;
-    background-color: transparent;
-    dynamic: false;
-    //layout: horizontal;
-    lines: 4;
+    background-color: #1c1c1ccc;
+    cycle: true;
+    children: [ dummy0, element, dummy1 ];
 }
 element {
     //padding: 3px;
     margin: 10px;
-    vertical-align: 0.5;
+    //vertical-align: 0.5;
     border: 2px;
     border-radius: 4px;
     background-color: #1c1c1c00;
@@ -91,6 +92,7 @@ element {
 element-text {
     background-color: inherit;
     text-color:       inherit;
+    font: "80";
     align: center;
 }
 element selected.normal {
@@ -104,4 +106,9 @@ element normal urgent {
 }
 element alternate normal {
 }
-
+dummy1{
+    expand: true;
+}
+dummy0{
+    expand: true;
+}

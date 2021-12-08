@@ -7,4 +7,4 @@ urxvtd -f&
 feh --bg-scale ~/wallpapers/IceCrystals.jpg&
 sleep 5s
 killall conky
-conky -c "~/.config/conky/Gotham" &
+conky -c "/home/akaminski/.config/conky/Gotham" &
